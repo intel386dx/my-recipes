@@ -1,0 +1,112 @@
+
+/* DeXa CSS Cookbook Theme - made by i386 DX*/
+/* See guides.htm for how to use it ;) */
+
+* {
+ font-family: Roboto, Arial, sans-serif;
+}
+html {
+ background-color: #C0C0C0;
+ background-image: url("bg.png");
+}
+body {
+ background-color: #f0f0f0;
+ background-color: rgba(255,255,255,0.9);
+ margin: initial;
+ padding: 0.5em;
+ box-shadow: 0px 0px 10px black;
+}
+.recipe-title {
+ background-color: rgba(255,255,255,0);
+ font-family: 'Source Sans Pro', Calibri, Arial, sans-serif;
+ margin: initial;
+ margin-bottom: 2px;
+ text-align: center;
+}
+.recipe-image {
+ background-color: rgba(0,0,0,0.12);
+}
+.recipe-details {
+ background-color: black;
+ display: block;
+ padding: 0.1em;
+ text-align: center;
+}
+.recipe-details-portion, .recipe-details-time,
+.recipe-details-cal {
+ display: inline-block;
+ color: white; 
+ background-color: black;
+ font: 20px 'Source Sans Pro Light', 'Source Sans Pro', Arial, sans-serif;
+ font-weight: 300;
+ padding: 2px;
+}
+.recipe-details-portion::after {
+ display: block;
+ font-family: Roboto, Arial, sans-serif;
+ font-size: 9px;
+ font-weight: normal;
+ content: "porsi";
+}
+
+/* Styled list number code. Source: css-tricks.com, slightly modified */
+ol {
+ list-style: none;
+ counter-reset: cnt;
+}
+ol li {
+ counter-increment: cnt;
+}
+ol li::before {
+ content: counter(cnt) ". ";
+ color: rgba(0,0,0,0.5);
+ font-family: 'Source Sans Pro', Calibri, Arial, sans-serif;
+ font-size: 1.1em;
+ font-weight: bold;
+}
+ul {
+ list-style: none;
+}
+ul li::marker {
+ color: rgba(0,0,0,0.5);
+ margin-left: 1px;
+}
+
+li {
+ margin-bottom: 2px;
+}
+.recipe-ingredients::before, .recipe-steps::before {
+ color: rgba(0,0,0,0.5);
+ display: block;
+ font-family: 'Source Sans Pro', Calibri, Arial, sans-serif;
+ font-size: 1.25em;
+ font-weight: bold;
+}
+.recipe-ingredients::before {
+ position: relative;
+ left: -15px;
+ content: "bahan:"
+}
+.recipe-ingredients {
+ list-style-type: disc;
+ padding-left: 25px;
+ padding-right: 10px;
+}
+.recipe-steps::before {
+ content: "cara membuat:"
+}
+.recipe-steps {
+ padding-left: 10px;
+ padding-right: 10px;
+}
+@media only screen and (max-width: 300px) {
+ * {font-size: 10px}
+ h1 {font-size: 18px}
+ .recipe-details-portion, .recipe-details-time,
+ .recipe-details-cal {font-size: 20px}
+ .recipe-details-portion, .recipe-details-time,
+ .recipe-details-cal::after {font-size: 9pt};
+}
+@media only screen and (min-width: 481px) {
+ body {width: 480px; margin: auto;}
+}
