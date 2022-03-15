@@ -1,0 +1,13 @@
+var u = navigator.userAgent;
+if (u.includes("MSIE 8") && u.includes("MSIE 7") && u.includes("MSIE 6") && u.includes("MSIE 5") && u.includes("MSIE 7")) {
+ var a = document.createElement("alert");
+ var b = document.querySelector("body");
+ a.style.display = "fixed";
+ a.style.width = "100%";
+ a.style.height = "100%";
+ a.innerHTML = "You need Internet Explorer 9.0 or later to see this page correctly.<br/>Type hideAlert() on your console to continue."
+ b.appendChild(a);
+};
+function hideAlert() {
+ document.querySelector("alert").style.display = "none";
+};
