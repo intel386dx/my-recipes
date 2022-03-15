@@ -32,6 +32,7 @@
 }
 html {
  background-color: #C0C0C0;
+ background-image: url("../assets/bg.png");
  background-image: url("bg.png");
 }
 body {
