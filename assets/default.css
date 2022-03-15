@@ -8,6 +8,7 @@
 html {
  background-color: #C0C0C0;
  background-image: url("bg.png");
+ background-image: url("../assets/bg.png");
 }
 body {
  background-color: #f0f0f0;
