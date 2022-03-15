@@ -3,9 +3,9 @@ This is my personal HTML cookbook. You can add some recipes by pull requests.<br
 <ol>
   <li>Use this HTML or CSS code to make your recipe.<br/>
     <strong>HTML: </strong>
-    <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/default.css&quot;/&gt;</code><br/>
+    <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/default.css&quot;/&gt;</code><br/>
     <strong>CSS: </strong>
-    <code>@import url("./assets/default.css");</code><br/>
+    <code>@import url("../assets/default.css");</code><br/>
     Note that the used CSS file using English classes but with Indonesian <code>content</code>s, so you have to localize it :)
   </li>
   <li>
