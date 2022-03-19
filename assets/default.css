@@ -3,25 +3,25 @@
 /* See README for how to use it ;) */
 
 @font-face {
- src: url("../assets/fonts/roboto") format("truetype");
+ src: url("../assets/fonts/roboto.ttf") format("truetype");
  font-family: Roboto;
 }
 @font-face {
- src: url("../assets/fonts/robotobd") format("truetype");
+ src: url("../assets/fonts/robotobd.ttf") format("truetype");
  font-family: Roboto;
  font-weight: bold;
 }
 @font-face {
- src: url("./fonts/ssanspro") format("truetype");
+ src: url("./fonts/ssanspro.ttf") format("truetype");
  font-family: "Source Sans Pro";
 }
 @font-face {
- src: url("./fonts/ssprobd") format("truetype");
+ src: url("./fonts/ssprobd.ttf") format("truetype");
  font-family: "Source Sans Pro";
  font-weight: bold;
 }
 @font-face {
- src: url("./fonts/ssansprolt") format("truetype");
+ src: url("./fonts/ssprolt.ttf") format("truetype");
  font-family: "Source Sans Pro";
  font-weight: 300;
 }
