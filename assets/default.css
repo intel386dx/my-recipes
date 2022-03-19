@@ -74,9 +74,6 @@ body {
  font-weight: normal;
  content: "porsi";
 }
-ul, ol {
- margin-left: 5px;
-}
 ol li::marker {
  color: rgba(0,0,0,0.5);
  font-family: 'Source Sans Pro', Calibri, Arial, sans-serif;
@@ -104,7 +101,7 @@ li {
 }
 .recipe-ingredients {
  list-style-type: disc;
- padding-left: 25px;
+ padding-left: 30px;
  padding-right: 10px;
 }
 .recipe-steps::before {
@@ -112,7 +109,7 @@ li {
  margin-left: -20px;
 }
 .recipe-steps {
- padding-left: 25px;
+ padding-left: 30px;
  padding-right: 10px;
 }
 @media only screen and (max-width: 300px) {
